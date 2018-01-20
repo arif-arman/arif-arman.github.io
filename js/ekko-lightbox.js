@@ -387,7 +387,7 @@ License: https://github.com/ashleydw/lightbox/blob/master/LICENSE
     right_arrow_class: '.glyphicon .glyphicon-chevron-right',
     directional_arrows: true,
     type: null,
-    always_show_close: true,
+    always_show_close: false,
     loadingMessage: 'Loading...',
     onShow: function() {},
     onShown: function() {},
