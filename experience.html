@@ -58,7 +58,7 @@
               <ul class="nav navbar-nav">
                 <li ><a href="index.html">Home</a></li>
                 <li><a href="academics.html">Academics</a></li>
-                <li class="active"><a href="experience.html">Activities</a></li>
+                <li class="active"><a href="experience.html">Experience</a></li>
                 <li ><a href="achievements.html">Key Achievements</a></li>
                 <li><a href="teaching.html">Teaching</a></li>
               </ul>
@@ -73,59 +73,93 @@
     
       <div class="container">
 		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
+			<div class="col-md-10 col-md-offset-1">
 			
 				<p class="lead">
-				Work Experience
+				Research Experience
 				</p>
-				<ul>
-          <li>
-          <p class="text-med">
-            Graduate Research Assistant [Sept 2018 - Now] <br>
-            Department of Computer Science and Engineering <br>
-            <b>Texas A&M University</b>, College Station, TX <br>
-			Working on a high-performance SIMD sort that focuses on reducing bottlenecks caused by several CPU components and inefficient code generation by the compiler. I am also working on a streaming framework that provides the programmer with a seemingly infinite buffer.
-          </p> 
-          </li>
-		  <li>
-		  <p class="text-med">
-            Research Intern [May 2024 - Aug 2024] <br>
-            <b>Microsoft</b>, Austin, TX <br>
-            As part of Azure SQL Data Warehouse, worked on developing an efficient SIMD sorter for data stored in columnar format (e.g., Parquet) for operations involving sorting multiple columns. Also, optimized sort performance by utilizing metadata and encodings from the columnar storage.
+				<ul class="text-med">          
+        <li>		  
+        Research Intern [May 2024 - Aug 2024] <br>
+        <b>Microsoft Research</b>, Azure SQL Data Warehouse, Austin, TX        
+        <ul>
+          <li>Developed an efficient SIMD sorter for data stored in columnar format (e.g., Parquet) for operations involving sorting multiple columns.</li>
+          <li>Optimized sort performance by utilizing metadata and encodings from the columnar storage.</li>
+          <li>Tools/Platforms: C++, SIMD (AVX-512), x86 Assembly, Intel VTune, Parquet.</li>
+        </ul>        
+        </li>
+        <br>
+          
+        <li>
+        Ph.D. Software Engineering Intern [Jun 2021 - Aug 2021] <br>
+        <b>Google System and Infrastructure</b>, Data Analytics and Storage Performance, Sunnyvale, CA 
+        <ul>
+          <li>Accelerating analytics: Identified acceleration opportunities in Google’s analytics engines such as Dremel and F1. In addition, build an analytical model to perform what-if analysis for different accelerator types.</li>
+          <li>Investigated root cause of IPC variance for Google’s globally distributed database service Spanner.</li>
+          <li>Tools/Platforms: C++, x86 Assembly, Dremel, F1, Spanner.</li>
+        </ul>
+        </li>
+        <br>
 
-          </p> 
-          </li>
-		  <li>
-		  <p class="text-med">
-            Ph.D. Intern [Jun 2021 - Aug 2021] <br>
-            <b>Google SysInfra</b>, Sunnyvale, CA <br>
-            As part of the Data Analytics and Storage Performance team, worked on several projects. (i) Accelerating analytics: Identifying acceleration opportunities in Google’s analytics engines such as Dremel and F1. In addition, building an analytical model to perform what-if analysis for different accelerator types. (ii) Spanner IPC variance root cause: Investigating primary cause of variance in IPC for Google’s globally distributed database service.<br>
+        <li>
+          Graduate Research Assistant [Sept 2018 - Now] <br>
+          Department of Computer Science and Engineering <br>
+          <b>Texas A&M University</b>, College Station, TX <br>
+          <ul>
+          <li>Worked on a streaming framework that provides programmers with seemingly infinite buffers and a novel in-place MSD Radix-sort using the framework that is 3−4X faster than SOTA (Vortex, ASPLOS 2020).</li>
+          <li>Developed a high-performance parallel SIMD merge-sort framework that maximizes SIMD register usage and reduces branch misprediction penalties, up to 2X over SOTA (Origami, VLDB 2022).</li>
+          <li>Developed an efficient key partition engine that resolves slowdowns caused by memory disambiguation, resulting in 2−3X speedup over SOTA (Typhoon, Bigdata, 2025).</li>
+          <li>Working on a high-performance SIMD sorter of small chunks that is useful for segmented sorts and dealing with smaller arrays in base cases of several sorts (MSD-radix, Merge, Quick etc.).</li>
+          <li>Tools/Platforms: C++, x86 Assembly, SIMD, Intel VTune, AMD μProf.</li>
+        </ul>			
+        </li>
+        <br> 
 
-          </p> 
-          </li>
-					<li>
-					<p class="text-med">
-						<a href="http://cse.uiu.ac.bd/profiles/arman/" target="_blank" style="color:blue;">Lecturer</a> [May 2016 - Jul 2018] <br>
-						Department of Computer Science and Engineering <br>
-						<b>United International University</b>, Dhaka, Bangladesh
-					</p> 
-					</li>
-					<li>
-					<p class="text-med">
-						Software Engineer</a> [Mar 2016 - May 2016] <br>
-						Server Apps Team<br>
-						<b>Reve Systems Ltd.</b>, Dhaka, Bangladesh
-					</p> 
-					</li>
+        <li>
+          Research Assistant, with Dr. Mohammed Eunus Ali [May. 2015 - Jul. 2018]<br>
+          Department of Computer Science and Engineering <br>
+          <b>Bangladesh University of Engineering and Technology</b>, Dhaka, Bangladesh
+          <ul>
+          <li>Developed efficient algorithms to process queries on spatial databases: Maximum visibility of a moving target (ADC 2016), reverse k-nearest neighbors of trajectories (ADC 2018).</li>
+          <li>Developed demonstration tools for various visibility query processing (SIGSPATIAL 2016, CIKM 2017).</li>
+          <li>Developed a variant of R*-Tree to improve performance of novel visibility queries, in collaboration with RMIT University, Australia.</li>
+          <li>Tools/Platform: C++, OpenGL, Python.</li>
+        </ul>
+        </li>
 				</ul>
-				
+
+        <br>
+        <p class="lead">
+          Teaching Experience
+          </p>
+        <ul class="text-med">
+          <li>
+          Graduate Teaching Assistant [Aug. 2020 - Present] <br>
+          Texas A&M University, Department of Computer Science and Engineering
+          <ul>
+            <li>Conducted labs, held office hours, prepared exams, and occasionally provided lectures.</li>
+            <li>Courses: Networks and Distributed Processing (CSCE 612), Operating Systems (CSCE 611), Machine Learning (CSCE 633), Introduction to Computer Systems (hon’s) (CSCE 313H), Data Structures and Algorithms (hon’s) (CSCE 221H).</li>
+          </ul>
+          </li>
+          <br>
+
+          <li>
+            <a href="http://cse.uiu.ac.bd/profiles/arman/" target="_blank" style="color:blue;">Lecturer</a> [May 2016 - Jul 2018] <br>
+            Department of Computer Science and Engineering <br>
+            <b>United International University</b>, Dhaka, Bangladesh
+            <ul>
+            <li>Designed courses, prepared syllabus and exams, conducted lectures, mentored students.</li>
+            <li>Courses: Algorithms (CSI 227), Discrete Mathematics (CSI 219), Object Oriented Programming (CSI 221), Structured Programming Language (CSI 121).</li>
+            <li>Organized an international conference and inter-university hackathon.</li>
+            </ul>            
+        </ul>				
+        <br>
+
 				<p class="lead">
 				Others
-				<ul>
+				<ul class="text-med">
 					<li>
-					<p class="text-med">
-					Presented paper at <a href="http://cikm2017.org/" style="color:blue;" target="_blank">CIKM 2017</a>, Pan Pacific Singapore
-					</p> 
+					Presented paper at <a href="http://cikm2017.org/" style="color:blue;" target="_blank">CIKM 2017</a>, Pan Pacific Singapore					 
 					<div class="row justify-content-center">
 						
 						<a href="img/cikm_0.jpg" data-toggle="lightbox" data-gallery="cert-gallery">
@@ -141,51 +175,32 @@
 					</div>
 					</li>
 					<br>
-					<li>
-					<p class="text-med">
-					Organizer, Mentor of UX Design Contest, Project Showcasing and Problem Setter <br>
-					<a href="http://csefestival.uiu.ac.bd/" style="color:blue;" target="_blank">UIU CSE Festival, 2017</a>
-					</p>
+					<li>					
+					Organizer, Mentor of UX Design Contest, Project Showcasing and Problem Setter, <a href="http://csefestival.uiu.ac.bd/" style="color:blue;" target="_blank">UIU CSE Festival, 2017</a>					
 					</li>
 					
-					<li>
-					<p class="text-med">
-					Organizing Committee Member <br>
-					International Conference on Medical Engineering, Health Informatics and Technology, <a href="http://meditec.uiu.ac.bd/" style="color:blue;" target="_blank">MediTec 2016</a>
-					</p>
+					<li>					
+					Organizing Committee Member, International Conference on Medical Engineering, Health Informatics and Technology, <a href="http://meditec.uiu.ac.bd/" style="color:blue;" target="_blank">MediTec 2016</a>
 					</li>
 						 
 					<li>
-					<p class="text-med">
-					Co-Founder and Former General Secretary <br> 
-					<a href="https://www.facebook.com/SCoL.glab/" style="color:blue;" target="_blank">Science Club of the Laboratorians</a>
-					</p>
+					Co-Founder and Former General Secretary, <a href="https://www.facebook.com/SCoL.glab/" style="color:blue;" target="_blank">Science Club of the Laboratorians</a>
 					</li>
 					
 					<li>
-					<p class="text-med">
-					Participant. Microsoft Imagine Cup 2013, Top 12 with project Solvencia; a communication platform for
-supershop and farmers using IVR (Interactive Voice Response)
-					</p>
+					Participant. Microsoft Imagine Cup, Top 12 with project Solvencia; a communication platform for supershop and farmers using IVR (Interactive Voice Response), 2013.
 					</li>
 					
 					<li>
-					<p class="text-med">
-					Participant. EATL-Prothom Alo App Development Contest 2014 for project Ekattor; a first person shooting game based on histories of 1971.
-					</p>
+					Participant. EATL-Prothom Alo App Development Contest for project Ekattor; a first person shooting game, 2014.
 					</li>
 					
 					<li>
-					<p class="text-med">
-					Participant. Robi-NSU ICT Innovation Quest 2012, Top 30
-					</p>
+					Participant in Top 30, Robi-NSU ICT Innovation Quest, 2012.
 					</li>
 					
 					<li>
-					<p class="text-med">
-					Participant. BITSMUN (Birla Institute of Technology and Science, India, Model United Nations) as Delegate
-of Spain in, General Assembly
-					</p>
+					Participant. BITSMUN (Birla Institute of Technology and Science, India, Model United Nations) as Delegate of Spain in, General Assembly, 2012.
 					</li>
 					
 					
